@@ -1,0 +1,281 @@
+<html lang="en">
+<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Blocksum</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/fontawesome.min.css" rel="stylesheet">
+  <link href="css/all.min.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="img/64x64.png" />
+
+  <link href="css/style.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <div id="loading"><div id="loadingLogo"></div></div>
+  
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/blocksum.png" height="25px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item nav-item-space active">
+              <a class="nav-link" aria-current="page" href="index.html"><i class="fas fa-tachometer-alt menu-item-fa"></i></a>
+            </li>
+            <li class="nav-item nav-item-space">
+              <a class="nav-link" href="blocks.html"><i class="fas fa-cubes menu-item-fa"></i></a>
+            </li>
+            <li class="nav-item nav-item-space">
+              <a class="nav-link" href="transactions.html"><i class="fas fa-money-bill-alt"></i></a>
+            </li>
+            <li class="nav-item nav-item-space">
+              <a class="nav-link" href="pools.html"><i class="fas fa-swimming-pool"></i></a>
+            </li>
+            <li class="nav-item nav-item-space">
+              <a class="nav-link" href="nodes.html"><i class="fas fa-server"></i></a>
+            </li>
+            <li class="nav-item nav-item-space">
+              <a class="nav-link" href="info.html"><i class="fas fa-info"></i></a>
+            </li>
+          </ul>
+          <div class="d-flex" style="margin-bottom:0px;">
+            <input class="form-control me-2" type="search" id="searchBar" placeholder="TXID, block height, hash" aria-label="TXID, block height, hash">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <div class="row" style="color:#ffffff; margin-top:60px; margin-bottom:75px; margin-right:0px;">
+      <center>
+        <div class="blocks-wrapper">
+          <div class="block-border-light block-margin-right">
+            <div class="block">
+              <span id="block1" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block1_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block1_txs">0</span> transactions</span><br>
+              <span style="font-size:14px;">-</span><br>
+            </div>
+          </div>
+          <div class="block-border-light block-margin-right">
+            <div class="block">
+              <span id="block2" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block2_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block2_txs">0</span> transaction(s)</span><br>
+              <span style="font-size:14px;">-</span><br>
+            </div>
+          </div>
+          <div class="block-border-light block-margin-right">
+            <div class="block">
+              <span id="block3" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block3_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block3_txs">0</span> transaction(s)</span><br>
+              <span style="font-size:14px;">-</span><br>
+            </div>
+          </div>
+          <div class="block-border-light">
+            <div class="block">
+              <span id="block4" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block4_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block4_txs">0</span> transaction(s)</span><br>
+              <span style="font-size:14px;">-</span><br>
+            </div>
+          </div>
+          <div class="vertical-spacing">&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</div>
+          <div class="block-border">
+            <div class="block block-click" id="block5-click">
+              <span id="block5" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block5_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block5_txs">0</span> transaction(s)</span><br>
+              <span style="font-size:14px;" id="block5_time">-</span><br>
+            </div>
+          </div>
+          <div class="block-border block-margin-left">
+            <div class="block block-click" id="block6-click">
+              <span id="block6" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block6_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block6_txs">0</span> transaction(s)</span><br>
+              <span style="font-size:14px;" id="block6_time">-</span><br>
+            </div>
+          </div>
+          <div class="block-border block-margin-left">
+            <div class="block block-click" id="block7-click">
+              <span id="block7" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block7_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block7_txs">0</span> transaction(s)</span><br>
+              <span style="font-size:14px;" id="block7_time">-</span><br>
+            </div>
+          </div>
+          <div class="block-border block-margin-left">
+            <div class="block block-click" id="block8-click">
+              <span id="block8" style="font-size:23px; font-weight:bold;">0</span><br>
+              <span id="block8_size">0</span> bytes<br>
+              <span style="font-size:11px;"><span id="block8_txs">0</span> transaction(s)</span><br>
+              <span style="font-size:14px;" id="block8_time">-</span><br>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+
+    <div class="container">
+
+      <div class="row mb-4">
+        <div class="col-6">
+          <div class="card card-dark">
+            <div class="card-header card-header-dark">
+              Hashrate
+            </div>
+            <div class="card-body card-chart">
+              <div id="hashrate-chart"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card card-dark">
+            <div class="card-header card-header-dark">
+              Difficulty
+            </div>
+            <div class="card-body card-chart">
+              <div id="difficulty-chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mb-4">
+        <div class="col-6">
+          <div class="card card-dark">
+            <div class="card-header card-header-dark">
+              Block size
+            </div>
+            <div class="card-body card-chart">
+              <div id="blocksize-chart"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card card-dark">
+            <div class="card-header card-header-dark">
+              Transactions
+            </div>
+            <div class="card-body card-chart">
+              <div id="transactions-chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="card card-dark">
+            <div class="card-header card-header-dark">
+              Transaction pool <span id="transactionPoolAmount" class="badge rounded-pill bg-secondary">0</span>
+            </div>
+            <div class="card-body">
+              <table class="table" id="transactionPool">
+                <thead>
+                  <tr>
+                    <th scope="col" style="width:500px;">Amount</th>
+                    <th scope="col" style="width:500px;">Fee</th>
+                    <th scope="col" style="width:500px;">Size</th>
+                    <th scope="col" style="width:500px;">Hash</th>
+                  </tr>
+                </thead>
+                <tbody id="transactionPoolList">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mb-4">
+        <div class="col-6">
+          <div class="card card-dark">
+            <div class="card-header card-header-dark">
+              Latest blocks
+            </div>
+            <div class="card-body">
+              <table class="table" id="10latestBlocks">
+                <thead>
+                  <tr>
+                    <th scope="col">Height</th>
+                    <th scope="col">Mined</th>
+                    <th scope="col">TXs</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Reward</th>
+                    <th scope="col">Difficulty</th>
+                  </tr>
+                </thead>
+                <tbody id="10latestBlocksList">
+                </tbody>
+              </table>
+              <center><a href="blocks.html" class="link-white" style="text-decoration:underline;">Show more blocks »</a></center>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card card-dark">
+            <div class="card-header card-header-dark">
+              Latest transactions
+            </div>
+            <div class="card-body">
+              <table class="table" id="10latestTransactions">
+                <thead>
+                  <tr>
+                    <th scope="col">Hash</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">USD</th>
+                    <th scope="col">Fee</th>
+                  </tr>
+                </thead>
+                <tbody id="10latestTransactionsList">
+                </tbody>
+              </table>
+              <center><a href="transactions.html" class="link-white" style="text-decoration:underline;">Show more transactions »</a></center>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/apexcharts.min.js"></script>
+  <script src="config.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/index_charts.js"></script>
+  <script src="js/10lastBlocksTransactions.js"></script>
+
+</body>
+
+</html>

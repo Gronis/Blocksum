@@ -119,7 +119,7 @@ async function renderBlocksTransactions() {
               <td style="color:#198754;">$${(currentPriceUSD * (blockie.transactions[k].amount_out / (10 ** decimals))).toFixed(2)}</td>
               <td>${blockie.transactions[k].fee / (10 ** decimals)} ${ticker}</td>`;
               tbodyRef.appendChild(tr);
-              
+
               transactionCount++;
             }
           }
@@ -145,11 +145,11 @@ async function renderBlocksTransactions() {
       var tr=document.createElement('tr');
       tr.innerHTML = `
       <td><b>${numberWithCommas((transactions.transactions[k].amount_out / (10 ** decimals)).toFixed(2))} ${ticker}</b></td>
+      <td style="color:#198754;">$${(currentPriceUSD * (transactions.transactions[k].amount_out / (10 ** decimals))).toFixed(2)}</td>
       <td>${numberWithCommas((transactions.transactions[k].fee / (10 ** decimals)).toFixed(2))} ${ticker}</td>
-      <td>${numberWithCommas(parseInt(transactions.transactions[k].size))}</td>
       <td><a href="transaction.html?hash=${transactions.transactions[k].hash}" class="link-white">${transactions.transactions[k].hash}</a></td>`;
       tbodyRef.appendChild(tr);
-      
+
       transactionsAmount++;
       document.getElementById('transactionPoolAmount').innerHTML = transactionsAmount
     }

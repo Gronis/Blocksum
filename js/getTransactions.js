@@ -21,10 +21,10 @@ async function renderBlocksTransactions(amount) {
               tr.innerHTML = `
               <td><b><a href="transaction.html?hash=${blockie.transactions[k].hash}" class="link-white">${blockie.transactions[k].hash.substring(0,10)}...${blockie.transactions[k].hash.substring(blockie.transactions[k].hash.length-10,blockie.transactions[k].hash.length)}</a></b></td>
               <td>${numberWithCommas((blockie.transactions[k].amount_out / (10 ** decimals)).toFixed(2))} ${ticker}</td>
-              <td style="color:#198754;">$${(currentPriceUSD * (blockie.transactions[k].amount_out / (10 ** decimals))).toFixed(2)}</td>
+              <td style="color:#00ff89;">$${(currentPriceUSD * (blockie.transactions[k].amount_out / (10 ** decimals))).toFixed(2)}</td>
               <td>${blockie.transactions[k].fee / (10 ** decimals)} ${ticker}</td>`;
               tbodyRef.appendChild(tr);
-              
+
               transactionCount++;
             }
           }

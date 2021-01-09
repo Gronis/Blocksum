@@ -160,6 +160,7 @@ body {
 	animation:spin 2s linear infinite;
 }
 
+
 @-webkit-keyframes fade {
   0% {
     opacity: 1;

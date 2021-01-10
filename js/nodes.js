@@ -1,6 +1,6 @@
 async function getNodesData() {
   try {
-    await getPoolInfo('https://raw.githubusercontent.com/kryptokrona/kryptokrona-block-explorer/master/pages/nodes.json').then(async (dataB) => {
+    await getPoolInfo('nodes.json').then(async (dataB) => {
       var tbodyRef = document.getElementById('nodeList').getElementsByTagName('tbody')[0];
       for (let i = 0; i < dataB.nodes.length; i++) {
         fetchWithTimeout(

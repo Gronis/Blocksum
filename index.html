@@ -135,8 +135,8 @@
 
     <div class="container">
 
-      <div class="row mb-4">
-        <div class="col-6">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
           <div class="card card-dark">
             <div class="card-header card-header-dark h6">
               Hashrate
@@ -147,7 +147,7 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-md-6 mb-4">
           <div class="card card-dark">
             <div class="card-header card-header-dark h6">
               Difficulty
@@ -160,8 +160,8 @@
       </div>
 
 
-      <div class="row mb-4">
-        <div class="col-6">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
           <div class="card card-dark">
             <div class="card-header card-header-dark h6">
               Block size
@@ -172,7 +172,7 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-md-6 mb-4">
           <div class="card card-dark">
             <div class="card-header card-header-dark h6">
               Transactions
@@ -185,14 +185,14 @@
       </div>
 
 
-      <div class="row mb-4">
-        <div class="col-12">
+      <div class="row">
+        <div class="col-12 mb-4">
           <div class="card card-dark">
             <div class="card-header card-header-dark h6">
               Transaction pool <span id="transactionPoolAmount" class="badge rounded-pill bg-secondary">0</span>
             </div>
             <div class="card-body">
-              <table class="table" id="transactionPool">
+              <table class="table scrollStyle" style="display: block; overflow-x: auto; white-space: nowrap; table-layout: fixed;" id="transactionPool">
                 <thead>
                   <tr>
                     <th scope="col" style="width:500px;">Amount</th>
@@ -210,22 +210,22 @@
       </div>
 
 
-      <div class="row mb-4">
-        <div class="col-6">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
           <div class="card card-dark">
             <div class="card-header card-header-dark h6">
               Latest blocks
             </div>
             <div class="card-body">
-              <table class="table" id="10latestBlocks">
+              <table class="table scrollStyle" style="display: block; overflow-x: auto; white-space: nowrap; table-layout: fixed;" id="10latestBlocks">
                 <thead>
                   <tr>
-                    <th scope="col">Height</th>
-                    <th scope="col">Mined</th>
-                    <th scope="col">TXs</th>
-                    <th scope="col">Size</th>
-                    <th scope="col">Reward</th>
-                    <th scope="col">Difficulty</th>
+                    <th scope="col" style="width:500px;">Height</th>
+                    <th scope="col" style="width:500px;">Mined</th>
+                    <th scope="col" style="width:500px;">TXs</th>
+                    <th scope="col" style="width:500px;">Size</th>
+                    <th scope="col" style="width:500px;">Reward</th>
+                    <th scope="col" style="width:500px;">Difficulty</th>
                   </tr>
                 </thead>
                 <tbody id="10latestBlocksList">
@@ -236,19 +236,19 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="card card-dark">
             <div class="card-header card-header-dark h6">
               Latest transactions
             </div>
             <div class="card-body">
-              <table class="table" id="10latestTransactions">
+              <table class="table scrollStyle" style="display: block; overflow-x: auto; white-space: nowrap; table-layout: fixed;" id="10latestTransactions">
                 <thead>
                   <tr>
-                    <th scope="col">Hash</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">USD</th>
-                    <th scope="col">Fee</th>
+                    <th scope="col" style="width:500px;">Hash</th>
+                    <th scope="col" style="width:500px;">Amount</th>
+                    <th scope="col" style="width:500px;">USD</th>
+                    <th scope="col" style="width:500px;">Fee</th>
                   </tr>
                 </thead>
                 <tbody id="10latestTransactionsList">

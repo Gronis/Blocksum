@@ -1,4 +1,4 @@
-let api = "https://blocksum.org/api";
+let api = "http://209.250.241.193:11898";
 let decimals = 5;
 let difficulty_target = 90;
 let ticker = "XKR"

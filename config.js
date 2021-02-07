@@ -5,7 +5,7 @@ let ticker = "XKR"
 
 let pools = [ // Name, Site URL, API URL
   ["Swepool", "https://swepool.org", "https://swepool.org/api/stats"],
-  ["Kryptokrona Göta", "https://pool.kryptokrona.se", "https://gota.kryptokrona.se/api/stats"],
+  ["Kryptokrona Göta", "https://pool.kryptokrona.se", "https://pool.kryptokrona.se/api/stats"],
   ["Kryptokrona Pool2", "https://pool2.kryptokrona.se", "https://blocksum.org/pool2/stats"],
   ["Floki Kryptokrona Pool", "https://floki.kryptokrona.se", "https://floki.kryptokrona.se/api/stats"],
   ["GamersNest", "https://pool.gamersnest.org", "https://blocksum.org/gamersnest/stats"],

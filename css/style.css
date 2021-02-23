@@ -1,81 +1,103 @@
 body {
-  background-color:#1E1D1F;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+	background-color: #1E1D1F;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .bg-dark {
-  background-color:#222123!important;
+	background-color: #222123 !important;
 }
 
 .menu-item-fa {
-  font-size:21px;
+	font-size: 21px;
 }
 
 .nav-item-space {
-  padding-right:5px;
+	padding-right: 5px;
 }
 
 .container {
-  color:#ffffff;
-  top:30px;
-  max-width: 1200px;
+	color: #ffffff;
+	top: 30px;
+	max-width: 1200px;
 }
 
 .card-dark {
-  background-color:#282729;
-  overflow: hidden;
-  border-radius: 0.50rem;
-  color: white;
-  border: none;
-}
-
-.form-control {
-	background-color:#2f2e30;
+	background-color: #282729;
 	overflow: hidden;
 	border-radius: 0.50rem;
 	color: white;
 	border: none;
-  }
-
-  #restoreFromSeedButton, #generateWalletButton, #restoreFromMnemonicButton, #decodeButton, #generateRandomPaymentIDButton, #encodeAddressButton, #sign_check, #sign_generate {
-	background-color:#3a353f!important;
-	border: #3a353f!important;
-  }
-
-  .btn-check:focus+.btn-primary, .btn-primary:focus {
-    color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 0%)!important;
 }
 
-.btn-check:focus+.btn, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%)!important;
+.form-control {
+	background-color: #2f2e30;
+	overflow: hidden;
+	border-radius: 0.50rem;
+	color: white;
+	border: none;
+}
+
+#restoreFromSeedButton,
+#generateWalletButton,
+#restoreFromMnemonicButton,
+#decodeButton,
+#generateRandomPaymentIDButton,
+#encodeAddressButton,
+#sign_check,
+#sign_generate {
+	background-color: #3a353f !important;
+	border: #3a353f !important;
+}
+
+img, svg {
+    margin-right: 0.3rem!important;
+    margin-left: 0.3rem!important;
+    vertical-align: middle;
+}
+
+.alert {
+	background-color: #2f2e30;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+	color: #fff;
+	background-color: #0b5ed7;
+	border-color: #0a58ca;
+	box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 0%) !important;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%) !important;
 }
 
 .card-header-dark {
-  background-color:#222123;
-  border-bottom: none;
+	background-color: #222123;
+	border-bottom: none;
 }
 
 .card-chart {
-  padding:0px;
+	padding: 0px;
 }
 
-.table-responsive, .table {
-  color:#ffffff;
+.table-responsive,
+.table {
+	color: #ffffff;
 }
 
 .link-white {
-  color:#ffffff;
-  text-decoration:none;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .link-white:hover {
-  color:#cfcfcf;
-  text-decoration: underline;
+	color: #cfcfcf;
+	text-decoration: underline;
 }
 
 .blocks-wrapper {
@@ -88,9 +110,10 @@ body {
 	background: linear-gradient(130deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
 	animation: gradient 15s ease infinite;
 	background-size: 100% 100% !important;
-	width:125px;height:125px;
-	padding:5px 6px;
-	border-radius:10px;
+	width: 125px;
+	height: 125px;
+	padding: 5px 6px;
+	border-radius: 10px;
 	display: inline-block;
 	animation-duration: 0.01s;
 	animation-name: imgflicker;
@@ -102,9 +125,11 @@ body {
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -117,113 +142,130 @@ body {
 	animation-name: imgflicker;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-  }
+}
 
 .block-border-light {
 	background: linear-gradient(130deg, rgba(95, 134, 242, 0.50), rgba(166, 95, 242, 0.40), rgba(242, 95, 208, 0.40), rgba(242, 95, 97, 0.40), rgba(242, 203, 95, 0.40), rgba(171, 242, 95, 0.40), rgba(95, 242, 129, 0.40), rgba(95, 242, 240, 0.40)) !important;
 	background-size: 100% 100% !important;
-	width:125px;height:125px;
-	padding:5px 6px;
-	border-radius:10px;
+	width: 125px;
+	height: 125px;
+	padding: 5px 6px;
+	border-radius: 10px;
 	display: inline-block;
 }
 
 .block-margin-left {
-	margin-left:20px;
+	margin-left: 20px;
 }
 
 .block-margin-right {
-	margin-right:20px;
+	margin-right: 20px;
 }
 
 .block {
-	padding:5px;
-	border-radius:10px;
-	height:100%;
-	background-color:#1E1D1F;
+	padding: 5px;
+	border-radius: 10px;
+	height: 100%;
+	background-color: #1E1D1F;
 	position: relative;
 }
 
 .block-click:hover {
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .gradient {
-  padding: 30px;
-  width: 250px;
-  float: left;
-  border: 1.5px solid;
-  border-top: 0;
-  border-bottom: 0;
-  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(226, 226, 226, 1) 48%, rgba(255, 255, 255, 0) 100%);
-  border-image-slice: 1;
+	padding: 30px;
+	width: 250px;
+	float: left;
+	border: 1.5px solid;
+	border-top: 0;
+	border-bottom: 0;
+	border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(226, 226, 226, 1) 48%, rgba(255, 255, 255, 0) 100%);
+	border-image-slice: 1;
 }
 
 .vertical-spacing {
 	height: 100%;
 	width: 2px;
 	display: inline-block;
-	margin-right:20px;
-	margin-left:20px;
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 10%,rgba(255, 255, 255, 0.65) 50%,rgba(255, 255, 255, 0) 90%,rgba(255, 255, 255, 0) 100%);
+	margin-right: 20px;
+	margin-left: 20px;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.65) 50%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
 }
 
 #loading {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  background-color: #1E1D1F;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background-color: #1E1D1F;
 	-webkit-animation-name: fade;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-fill-mode: both;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
 }
 
 #loadingLogo {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
 	background-image: url("/img/64x64.png");
-  background-position: center;
-  background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
-	-webkit-animation:spin 2s linear infinite;
-	-moz-animation:spin 2s linear infinite;
-	animation:spin 2s linear infinite;
+	-webkit-animation: spin 2s linear infinite;
+	-moz-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
 }
 
 
 @-webkit-keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0
-  }
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0
+	}
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
 
 .apexcharts-legend-text {
-	color:#ffffff!important;
+	color: #ffffff !important;
 }
 
 .apexcharts-tooltip {
 	line-height: 1;
 	color: #fff;
-	background: #2c2c2c!important;
-	border: 0!important;
-	border-radius: 3px!important;
+	background: #2c2c2c !important;
+	border: 0 !important;
+	border-radius: 3px !important;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
@@ -237,25 +279,29 @@ body {
 }
 
 .apexcharts-tooltip-title {
-	border-bottom:none!important;
-	background: #2c2c2c!important;
-	margin-top:5px;
+	border-bottom: none !important;
+	background: #2c2c2c !important;
+	margin-top: 5px;
 }
 
-#block1, #block2, #block3, #block4 {
-  display: none;
+#block1,
+#block2,
+#block3,
+#block4 {
+	display: none;
 }
 
 .form-control {
-  padding: .15rem .75rem!important;
+	padding: .15rem .75rem !important;
 }
+
 /* Changes the opacity of the two first and last blocks. */
 .blockOpacity30 {
-  opacity: 0.3!important;
+	opacity: 0.3 !important;
 }
 
 .blockOpacity50 {
-  opacity: 0.5!important;
+	opacity: 0.5 !important;
 }
 
 
@@ -291,7 +337,7 @@ body {
 	background-color: #555;
 }
 
-#labels-div{
+#labels-div {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

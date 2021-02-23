@@ -65,6 +65,10 @@ body {
 	padding:5px 6px;
 	border-radius:10px;
 	display: inline-block;
+	animation-duration: 0.01s;
+	animation-name: imgflicker;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 @keyframes gradient {
@@ -78,6 +82,15 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+.gradient {
+	height: 36px !important;
+	opacity: 0.9;
+	animation-duration: 0.01s;
+	animation-name: imgflicker;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+  }
 
 .block-border-light {
 	background: linear-gradient(130deg, rgba(95, 134, 242, 0.50), rgba(166, 95, 242, 0.40), rgba(242, 95, 208, 0.40), rgba(242, 95, 97, 0.40), rgba(242, 203, 95, 0.40), rgba(171, 242, 95, 0.40), rgba(95, 242, 129, 0.40), rgba(95, 242, 240, 0.40)) !important;
@@ -249,4 +262,10 @@ body {
 .scrollStylev::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	background-color: #555;
+}
+
+#labels-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }

@@ -50,12 +50,6 @@ body {
 	border: #3a353f !important;
 }
 
-img, svg {
-    margin-right: 0.3rem!important;
-    margin-left: 0.3rem!important;
-    vertical-align: middle;
-}
-
 .alert {
 	background-color: #2f2e30;
 	display: flex;

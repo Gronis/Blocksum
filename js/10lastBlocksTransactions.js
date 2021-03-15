@@ -65,40 +65,36 @@ async function renderBlocksTransactions() {
 
           // Setting the beautifull stuff
           if(dataB.result.block_header.height == block.height) {
-            document.getElementById('block5').innerHTML = block.height;
+            document.getElementById('block5').innerHTML = numberWithCommas(block.height);
             block5hash = block.hash;
             document.getElementById("block5-click").addEventListener("click", function() { window.location.href="block.html?hash=" + block5hash; });
             document.getElementById('block5_size').innerHTML = numberWithCommas(block.block_size);
             document.getElementById('block5_txs').innerHTML = numberWithCommas(block.num_txes);
             document.getElementById('block5_time').innerHTML = (moment(block.timestamp * 1000).fromNow() == "a few seconds ago" ? 'seconds ago' : moment(block.timestamp * 1000).fromNow());
-            document.getElementById('block4').innerHTML = block.height+1;
           }
           if(dataB.result.block_header.height-1 == block.height) {
-            document.getElementById('block6').innerHTML = block.height;
+            document.getElementById('block6').innerHTML = numberWithCommas(block.height);
             block6hash = block.hash;
             document.getElementById("block6-click").addEventListener("click", function() { window.location.href="block.html?hash=" + block6hash; });
             document.getElementById('block6_size').innerHTML = numberWithCommas(block.block_size);
             document.getElementById('block6_txs').innerHTML = numberWithCommas(block.num_txes);
             document.getElementById('block6_time').innerHTML = moment(block.timestamp * 1000).fromNow();
-            document.getElementById('block3').innerHTML = block.height+3;
           }
           if(dataB.result.block_header.height-2 == block.height) {
-            document.getElementById('block7').innerHTML = block.height;
+            document.getElementById('block7').innerHTML =  numberWithCommas(block.height);
             block7hash = block.hash;
             document.getElementById("block7-click").addEventListener("click", function() { window.location.href="block.html?hash=" + block7hash; });
             document.getElementById('block7_size').innerHTML = numberWithCommas(block.block_size);
             document.getElementById('block7_txs').innerHTML = numberWithCommas(block.num_txes);
             document.getElementById('block7_time').innerHTML = moment(block.timestamp * 1000).fromNow();
-            document.getElementById('block2').innerHTML = block.height+5;
           }
           if(dataB.result.block_header.height-3 == block.height) {
-            document.getElementById('block8').innerHTML = block.height;
+            document.getElementById('block8').innerHTML =  numberWithCommas(block.height);
             block8hash = block.hash;
             document.getElementById("block8-click").addEventListener("click", function() { window.location.href="block.html?hash=" + block8hash; });
             document.getElementById('block8_size').innerHTML = numberWithCommas(block.block_size);
             document.getElementById('block8_txs').innerHTML = numberWithCommas(block.num_txes);
             document.getElementById('block8_time').innerHTML = moment(block.timestamp * 1000).fromNow();
-            document.getElementById('block1').innerHTML = block.height+7;
           }
           if(dataB.result.block_header.height == block.height) {
             document.getElementById('block4_txs').innerHTML = numberWithCommas(block.height+1);
@@ -172,3 +168,4 @@ renderBlocksTransactions();
 setInterval(async function() {
   renderBlocksTransactions();
 }, 30000);
+
